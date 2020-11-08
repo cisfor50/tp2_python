@@ -88,18 +88,3 @@ mayor_promedio_general = mejor_promedio_general(promedio_todos_disparos, partici
 print(f"Quienes obtuvieron un promedio mayor al general son: ")
 for i in mayor_promedio_general:
   print(f"ID: {i['numero_id']} -> {i['nombre']} {i['apellido']}, con un promedio de: {i['promedio_disparo']}.")
-
-  
-  # lista_ordenada_por_edad = sorted(participantes, key=lambda x:x['edad'])
-  # total_participantes = len(participantes) 
-#promedio_todos_disparos(participantes)
-#mejor_disparo_ordenado = sorted(participantes, key=lambda x:x['mejor_disparo'])
-#mejor_promedio_ordenado = sorted(participantes, key=lambda x:x['promedio_disparo'])
-#ultimo_lugar = mejor_disparo_ordenado[-1]
-#ordenados_por_edad = sorted(participantes, key=lambda x:x['edad'])
-# print(mejor_disparo_ordenado)
-# podio(mejor_disparo_ordenado)
-# print(len(participantes))
-#print(len(participantes_hombres(participantes)))
-#print(edad_mujeres(participantes))
-#podiotxt(participantes)
