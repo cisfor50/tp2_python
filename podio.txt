@@ -1,0 +1,18 @@
+Puesto 1
+ID del participante: 3
+Nombre: Gertrudis
+Apellido: Morel
+Mejor disparo: 2
+
+Puesto 2
+ID del participante: 4
+Nombre: Agustin
+Apellido: Fernandez
+Mejor disparo: 4
+
+Puesto 3
+ID del participante: 5
+Nombre: Mujer
+Apellido: Mujer
+Mejor disparo: 5
+
