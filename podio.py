@@ -7,7 +7,7 @@ def podio(participantes):
     print("Mejor disparo: " + str(participantes[i]["mejor_disparo"]))
     print("Promedio: " + str(participantes[i]["promedio_disparo"]) + "\n")
 
-def podiotxt(participantes):
+def podio_txt(participantes):
   txt = open("podio.txt", "w+")  
   for i in range(3):
     txt.write("Puesto " + str(i+1) + "\n")
@@ -15,6 +15,7 @@ def podiotxt(participantes):
     txt.write("Nombre: " + participantes[i]["nombre"] + "\n")
     txt.write("Apellido: " + participantes[i]["apellido"] + "\n")
     txt.write("Mejor disparo: " + str(participantes[i]["mejor_disparo"]) + "\n")
+    txt.write("Promedio: " + str(participantes[i]["promedio_disparo"]) + "\n")
     txt.write("\n")
 
 def participantes_hombres(participantes):

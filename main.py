@@ -1,11 +1,5 @@
-#TP 1 Paradigmas de la programación IFTS N°18
-#Apellido y nombre: Gauna Camila
-#DNI: 38042820
-#Comisión: A
-#Fecha: 08/11/2020
-
 from calculos_disparo import pitagoras, mejorDisparo, promedioDisparo
-from podio import podio, podiotxt, participantes_hombres, edad_mujeres, promedio_todos_disparos, mejor_promedio_general
+from podio import podio, podio_txt, participantes_hombres, edad_mujeres, promedio_todos_disparos, mejor_promedio_general
 
 participantes = []
 numero_id = ''
@@ -52,7 +46,7 @@ print("                   ------------------- Podio de ganadores en función del
 mejor_disparo_ordenado = sorted(participantes, key=lambda x:x['mejor_disparo'])
 podio(mejor_disparo_ordenado)
 #Archivo de texto
-podiotxt(mejor_disparo_ordenado)
+podio_txt(mejor_disparo_ordenado)
 
 #i)	Opcional: Mejorar el punto a) asumiendo que se puede dar el caso en que dos participantes
 #tengan el mismo Mejor Disparo, ordenar también por mejor promedio.
