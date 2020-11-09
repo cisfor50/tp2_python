@@ -1,5 +1,8 @@
 #TP 1 Paradigmas de la programación IFTS N°18
-#Camila Gauna - Comisión A
+#Apellido y nombre: Gauna Camila
+#DNI: 38042820
+#Comisión: A
+#Fecha: 08/11/2020
 
 from calculos_disparo import pitagoras, mejorDisparo, promedioDisparo
 from podio import podio, podiotxt, participantes_hombres, edad_mujeres, promedio_todos_disparos, mejor_promedio_general
@@ -49,7 +52,7 @@ print("                   ------------------- Podio de ganadores en función del
 mejor_disparo_ordenado = sorted(participantes, key=lambda x:x['mejor_disparo'])
 podio(mejor_disparo_ordenado)
 #Archivo de texto
-podiotxt(participantes)
+podiotxt(mejor_disparo_ordenado)
 
 #i)	Opcional: Mejorar el punto a) asumiendo que se puede dar el caso en que dos participantes
 #tengan el mismo Mejor Disparo, ordenar también por mejor promedio.
@@ -58,8 +61,9 @@ print("                   ------------------- Podio de ganadores en función del
 podio(mejor_promedio_ordenado)
 
 #b)Informar quien fue el último (Nro Participante, Nombre, Apellido y Mejor disparo).
-ultimo_lugar = mejor_disparo_ordenado[-1]
-print(f"El último lugar lo obtuvo el participante ID N° {ultimo_lugar['numero_id']} -> {ultimo_lugar['nombre']} {ultimo_lugar['apellido']}, con un promedio de: {ultimo_lugar['promedio_disparo']}.")
+ultimo_lugar = sorted(participantes, key=lambda x:x['mejor_disparo'], reverse=True)
+ultimo_lugar = ultimo_lugar[0]
+print(f"El último lugar lo obtuvo el participante ID N° {ultimo_lugar['numero_id']} -> {ultimo_lugar['nombre']} {ultimo_lugar['apellido']}. Mejor disparo: {ultimo_lugar['mejor_disparo']}.")
 
 #c)Informar cuantos participantes formaron parte del concurso.
 total_participantes = len(participantes)
